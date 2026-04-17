@@ -65,7 +65,9 @@ function renderSidebar() {
     });
 
     masterData.forEach(cat => {
-        createSidebarItem(list, cat.name, cat.tools.length, () => renderTools(cat.tools, cat.name));
+        if (cat.tools.length > 0) {
+            createSidebarItem(list, cat.name, cat.tools.length, () => renderTools(cat.tools, cat.name));
+        }
     });
 }
 
@@ -196,9 +198,10 @@ function setupSearch() {
 window.applyFilters = function() {
     const query = document.getElementById('searchInput').value.toLowerCase();
     
-    // Find active category
+    // Find active category text by strictly reading the first span (ignoring the count span)
     const activeCatEl = document.querySelector('.category-item.active');
-    const activeText = activeCatEl ? activeCatEl.innerText : 'All Categories';
+    const firstSpan = activeCatEl ? activeCatEl.querySelector('span') : null;
+    const activeText = firstSpan ? firstSpan.innerText : 'All Categories';
     
     let baseTools = allTools;
     if (activeText === '💖 My Stack') {
