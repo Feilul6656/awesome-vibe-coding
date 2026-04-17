@@ -76,7 +76,10 @@ function createSidebarItem(parent, text, onClick) {
         document.querySelectorAll('.category-item').forEach(el => el.classList.remove('active'));
         li.classList.add('active');
         document.getElementById('searchInput').value = '';
-        applyFilters(); // Now applies filters based on newly selected active category
+        applyFilters(); 
+        
+        // Smoothly scroll back to the top of the grid so user isn't stuck at bottom
+        window.scrollTo({ top: document.querySelector('.results-header').offsetTop - 120, behavior: 'smooth' });
     };
     parent.appendChild(li);
 }
@@ -212,7 +215,7 @@ window.setSearchQuery = function(query) {
     document.querySelectorAll('.category-item').forEach(el => el.classList.remove('active'));
     document.querySelector('.category-item').classList.add('active'); // Reset to "All Categories"
     applyFilters();
-    window.scrollTo({ top: document.querySelector('.results-header').offsetTop - 100, behavior: 'smooth' });
+    window.scrollTo({ top: document.querySelector('.results-header').offsetTop - 120, behavior: 'smooth' });
 };
 
 window.feelingLucky = function() {
