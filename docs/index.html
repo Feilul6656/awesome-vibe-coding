@@ -35,15 +35,20 @@
             
             <div class="search-container">
                 <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <input type="text" id="searchInput" placeholder="Search for tools, categories, or keywords... (e.g. 'mcp', 'cli', 'react')">
+                <input type="text" id="searchInput" placeholder="Search for tools, categories, or keywords...">
+                <div class="search-shortcut">Cmd+K</div>
             </div>
             
             <div class="quick-filters">
-                <span>Start here:</span>
-                <button class="filter-chip" onclick="setSearchQuery('⭐ Personal Pick')">Top Picks</button>
-                <button class="filter-chip" onclick="setSearchQuery('No-Code')">No-Code App Builders</button>
-                <button class="filter-chip" onclick="setSearchQuery('Free')">Free Tools</button>
-                <button class="filter-chip" onclick="feelingLucky()" style="border-color: var(--primary);">🎲 I'm Feeling Lucky</button>
+                <span>Quick visual filters:</span>
+                <label class="checkbox-filter"><input type="checkbox" id="filterFree" onchange="applyFilters()"> Free Only</label>
+                <label class="checkbox-filter"><input type="checkbox" id="filterOpenSource" onchange="applyFilters()"> Open Source</label>
+                <label class="checkbox-filter"><input type="checkbox" id="filterNoCode" onchange="applyFilters()"> No-Code</label>
+            </div>
+
+            <div class="quick-filters" style="margin-top:0.75rem;">
+                <button class="filter-chip" onclick="setSearchQuery('⭐ Personal Pick')">⭐ Top Picks</button>
+                <button class="filter-chip" onclick="feelingLucky()">🎲 I'm Feeling Lucky</button>
             </div>
         </div>
     </header>
@@ -61,9 +66,22 @@
 
         <main class="content">
             <div class="results-header">
-                <h2 id="currentCategoryTitle">All Tools</h2>
-                <span id="resultsCount">Loading tools...</span>
+                <div>
+                    <h2 id="currentCategoryTitle">All Tools</h2>
+                    <span id="resultsCount">Loading tools...</span>
+                </div>
+                <div class="view-toggles">
+                    <button class="view-btn active" id="btnGrid" onclick="setViewMode('grid')" title="Card Grid View">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    </button>
+                    <button class="view-btn" id="btnList" onclick="setViewMode('list')" title="Compact List View">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                    </button>
+                </div>
             </div>
+            
+            <div id="didYouMean" class="did-you-mean" style="display: none;"></div>
+            
             <div id="toolsGrid" class="tools-grid">
                 <!-- Tool cards injected here -->
             </div>
@@ -74,6 +92,28 @@
         <p>Curated with ❤️ by <a href="https://github.com/bluegalaxy111" target="_blank">bluegalaxy111</a></p>
         <p class="sub-footer">Not affiliated with any of these companies. Open source under CC0 1.0.</p>
     </footer>
+
+    <!-- Compare Floating Bar -->
+    <div id="compareBar" class="compare-bar hidden">
+        <span><strong id="compareCount">0</strong> tools selected for comparison</span>
+        <div class="compare-actions">
+            <button onclick="clearCompare()" class="btn-clear-compare">Clear</button>
+            <button onclick="openCompareModal()" class="btn-compare">Compare Now</button>
+        </div>
+    </div>
+
+    <!-- Dialog Modal for Comparison -->
+    <dialog id="compareModal" class="glass-modal">
+        <div class="modal-header">
+            <h2>Side-by-Side Comparison</h2>
+            <button onclick="closeCompareModal()" class="btn-close">×</button>
+        </div>
+        <div class="modal-content">
+            <table class="compare-table" id="compareTable">
+                <!-- Data injected by JS -->
+            </table>
+        </div>
+    </dialog>
 
     <script src="app.js"></script>
 </body>
