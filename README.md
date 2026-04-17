@@ -80,7 +80,7 @@ The term was [coined by Andrej Karpathy](https://x.com/karpathy/status/188619218
 
 Full-featured code editors with deeply integrated AI that can understand your entire codebase, edit multiple files, and execute commands autonomously.
 
-- [Cursor](https://cursor.sh) - AI-first code editor built on VS Code. Industry benchmark for agentic IDE experience. Features Composer for multi-file editing, Tab for intelligent autocomplete, and deep codebase awareness.  *Personal pick - the one most people should start with.* *(Freemium, Pro $20/mo)*
+- [Cursor](https://cursor.sh) - AI-first code editor built on VS Code. Industry benchmark for agentic IDE experience. Features Composer for multi-file editing, Tab for intelligent autocomplete, and deep codebase awareness. *Personal pick - the one most people should start with.* *(Freemium, Pro $20/mo)*
 - [Windsurf](https://codeium.com/windsurf) - AI coding IDE by Codeium (acquired by Cognition in 2025). Strong context awareness across large codebases at competitive pricing. Features Cascade for multi-step agentic flows. *(Freemium)*
 - [Void](https://voideditor.com) - Open-source AI code editor. Privacy-first alternative that lets you bring your own model/API key. No vendor lock-in. *(Free, open-source)*
 - [Zed](https://zed.dev) - High-performance editor written in Rust with built-in AI assistant. Known for blazing speed and multiplayer editing. *(Free)*
@@ -92,14 +92,13 @@ Full-featured code editors with deeply integrated AI that can understand your en
 - [Neovim + AI Plugins](https://neovim.io) - The hackable text editor with AI plugins like Copilot.vim, ChatGPT.nvim, and Avante.nvim for terminal purists. *(Free, open-source)*
 - [Emacs + GPTel](https://github.com/karthink/gptel) - AI assistant for Emacs. Chat with LLMs, generate code, inline editing. For Emacs die-hards. *(Free, open-source)*
 - [Fleet](https://www.jetbrains.com/fleet/) - JetBrains' lightweight editor with AI capabilities. Polyglot, fast, collaborative. *(Free)*
-
 ### Terminal / CLI
 
 AI agents that operate from your terminal, reading, writing, and executing code with full system access.
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) - Anthropic's terminal-native agentic coding tool. Best-in-class reasoning with Claude Opus/Sonnet. Can read/write files, run commands, search codebases, and manage git.  *Personal pick - best for complex, multi-file tasks.* *(Requires Claude Max subscription)*
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) - Anthropic's terminal-native agentic coding tool. Best-in-class reasoning with Claude Opus/Sonnet. Can read/write files, run commands, search codebases, and manage git. *Personal pick - best for complex, multi-file tasks.* *(Requires Claude Max subscription)*
 - [Codex CLI](https://github.com/openai/codex-cli) - OpenAI's open-source CLI coding agent. Lightweight, fast, runs locally with configurable autonomy levels. *(Free, open-source)*
-- [Aider](https://aider.chat) - Open-source AI pair programming in your terminal. Git-aware, works with any LLM. One of the original CLI coding tools. Best-in-class for its edit format system.  *Personal pick - best open-source option.* *(Free, open-source)*
+- [Aider](https://aider.chat) - Open-source AI pair programming in your terminal. Git-aware, works with any LLM. One of the original CLI coding tools. Best-in-class for its edit format system. *Personal pick - best open-source option.* *(Free, open-source)*
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google's open-source terminal AI agent. Integrates with Gemini models with 1M token context. *(Free, open-source)*
 - [Amazon Q Developer CLI](https://aws.amazon.com/q/developer/) - AWS's AI coding assistant for terminal with deep AWS infrastructure integration. *(Free tier available)*
 - [Mentat](https://github.com/AbanteAI/mentat) - Open-source AI coding agent that understands your entire repo and coordinates changes across multiple files. *(Free, open-source)*
@@ -110,7 +109,6 @@ AI agents that operate from your terminal, reading, writing, and executing code 
 - [Plandex](https://github.com/plandex-ai/plandex) - Terminal-based AI coding agent designed for complex, multi-file tasks with built-in version control for AI changes. *(Free, open-source)*
 - [Amp](https://amp.dev) - AI coding agent from Sourcegraph. Terminal and IDE modes with deep code intelligence integration. *(Free tier available)*
 - [Blackbox AI](https://www.blackbox.ai) - Multi-model AI coding agent that uses a "Chairman" architecture - sends tasks to multiple models in parallel and picks the best result. *(Freemium)*
-
 ### Browser-Based
 
 Full development environments that run in your browser - no local setup required.
@@ -122,10 +120,12 @@ Full development environments that run in your browser - no local setup required
 - [Project IDX](https://idx.dev) - Google's AI-enabled browser-based IDE for full-stack and multi-platform app development including Flutter, Angular, and more. *(Free)*
 - [CodeSandbox](https://codesandbox.io) - Instant cloud development environments with AI integration. Popular for frontend prototyping and sharing. *(Freemium)*
 - [Glitch](https://glitch.com) - Build full-stack web apps in your browser with instant hosting. Great for learning and quick prototyping. *(Free)*
-
 ### Autonomous Software Engineers
 
 AI agents designed to work as fully autonomous "junior developers" - they plan, code, test, and iterate with minimal human intervention.
+
+
+---
 
 - [Devin](https://devin.ai) - Cognition AI's autonomous software engineer. Has its own IDE, terminal, and browser in a sandboxed environment. Can plan, code, test, and deploy entire features. *(Paid, from $500/mo)*
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source AI software development agent (formerly OpenDevin). Can browse the web, write code, execute commands. Free alternative to Devin. *(Free, open-source)*
@@ -135,14 +135,14 @@ AI agents designed to work as fully autonomous "junior developers" - they plan, 
 - [Agentless](https://github.com/OpenAutoCoder/Agentless) - Simpler, agentless approach to solving coding tasks - no complex agent scaffolding needed. *(Free, open-source)*
 - [Cosine Genie](https://cosine.sh) - AI software engineer trained on real-world codebases. Understands complex repos and makes changes autonomously. *(Paid)*
 - [Factory AI](https://www.factory.ai) - Enterprise autonomous coding platform. Droids that handle refactoring, migrations, and code modernization. *(Enterprise)*
-
----
-
 ## AI App Builders (No-Code)
 
 Platforms where you describe an app in plain English and get a working, deployable application - the purest form of vibe coding. **No coding knowledge needed.**
 
-- [Lovable](https://lovable.dev) - Describe your app → get a full-stack web app with UI, backend, auth, and database (Supabase). The current leader for non-technical founders building MVPs.  *Personal pick - closest to "describe and ship."* *(Freemium)*
+
+---
+
+- [Lovable](https://lovable.dev) - Describe your app → get a full-stack web app with UI, backend, auth, and database (Supabase). The current leader for non-technical founders building MVPs. *Personal pick - closest to "describe and ship."* *(Freemium)*
 - [bolt.new](https://bolt.new) - StackBlitz's AI app builder. Generates and runs full-stack apps in the browser with real-time preview and one-click deploy to Netlify. *(Freemium)*
 - [v0](https://v0.dev) - Vercel's AI UI generator. Creates production-quality React + Tailwind CSS components from text prompts. Best for frontend/UI components. *(Freemium)*
 - [Replit Agent](https://replit.com/agent) - Replit's app builder agent. Describe what you want, it builds the full app including frontend, backend, database, and deploys it. *(Paid)*
@@ -162,12 +162,12 @@ Platforms where you describe an app in plain English and get a working, deployab
 - [Buzzy](https://www.buzzy.buzz) - Turn Figma designs into working apps with AI. Design-first approach to app building. *(Freemium)*
 - [Pico](https://picoapps.xyz) - Build micro-apps with a single prompt. Fast, simple, shareable web apps in seconds. *(Free)*
 - [Literally Anything](https://www.literallyanything.io) - Type anything → get a working web app. The simplest possible vibe coding interface. *(Freemium)*
-
----
-
 ## AI Code Completion & Assistants
 
 Inline code suggestions, autocomplete, and chat-based coding assistants - the broadest category of AI coding tools.
+
+
+---
 
 - [GitHub Copilot](https://github.com/features/copilot) - The OG and most widely adopted AI coding assistant (90%+ developer awareness). Works in VS Code, JetBrains, Neovim, Xcode, and more. Now features agent mode. *(Free tier available, Pro $10/mo)*
 - [Supermaven](https://supermaven.com) - Extremely fast code completion with the lowest latency in the industry (acquired by Cursor). 300K token context window. *(Freemium)*
@@ -187,12 +187,12 @@ Inline code suggestions, autocomplete, and chat-based coding assistants - the br
 - [Poolside](https://poolside.ai) - Enterprise AI coding assistant trained on high-quality synthetic code data. Focus on security and privacy. *(Enterprise)*
 - [Mintlify Writer](https://marketplace.visualstudio.com/items?itemName=mintlify.document) - VS Code extension that auto-generates docstrings when you highlight a function. *(Free)*
 - [AI Commits (VS Code)](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) - Conventional commit message helper integrated into VS Code source control. *(Free)*
-
----
-
 ## AI Code Review
 
 AI tools that automatically review pull requests, catch bugs, and enforce standards.
+
+
+---
 
 - [CodeRabbit](https://coderabbit.ai) - AI-powered code review for pull requests. Catches bugs, security vulnerabilities, style issues. Has Issue Planner for proactive architecture suggestions. *(Freemium - free for open source)*
 - [PR-Agent](https://github.com/Codium-ai/pr-agent) - Open-source AI tool for automated PR reviews, descriptions, and suggestions. By the makers of Qodo. *(Free, open-source)*
@@ -201,12 +201,12 @@ AI tools that automatically review pull requests, catch bugs, and enforce standa
 - [Sourcery](https://sourcery.ai) - AI-powered code review focused on Python. Suggests refactorings and catches anti-patterns. *(Freemium)*
 - [What The Diff](https://whatthediff.ai) - AI that writes PR descriptions and reviews your code changes in human-readable language. *(Freemium)*
 - [GitHub Copilot Code Review](https://github.blog/changelog/2024-10-29-copilot-code-review-in-github-com) - GitHub's built-in AI code review in pull requests. *(Included with Copilot subscription)*
-
----
-
 ## AI for Design → Code
 
 Turn designs, mockups, screenshots, and wireframes into working code.
+
+
+---
 
 - [Screenshot to Code](https://github.com/abi/screenshot-to-code) - Upload a screenshot → get working HTML/Tailwind/React/Vue code. Supports video → app demos too. Open-source. *(Free, open-source)*
 - [Uizard](https://uizard.io) - Hand-drawn wireframes → working UI designs → exportable code. Great for rapid prototyping ideas. *(Freemium)*
@@ -217,14 +217,14 @@ Turn designs, mockups, screenshots, and wireframes into working code.
 - [Builder.io](https://www.builder.io) - Visual editor with Figma-to-code functionality. Generate React, Vue, Svelte, Angular code from designs. *(Freemium)*
 - [Relume](https://www.relume.io) - AI website builder that generates sitemaps and wireframes from text, then exports to Figma or Webflow. *(Paid)*
 - [Visily](https://www.visily.ai) - AI-powered wireframing and prototyping tool. Convert screenshots, sketches, or text to editable wireframes. *(Freemium)*
-
----
-
 ## AI Debugging & Testing
 
 AI tools that help find bugs, generate tests, explain errors, and ensure code quality.
 
-- [ChatGPT](https://chat.openai.com) / [Claude](https://claude.ai) - Paste your error message or buggy code → get an explanation and fix. The simplest vibe debugging flow. *(Freemium)*
+
+---
+
+- [ChatGPT](https://chat.openai.com) - / [Claude](https://claude.ai) - Paste your error message or buggy code → get an explanation and fix. The simplest vibe debugging flow. *(Freemium)*
 - [Jam](https://jam.dev) - AI-powered bug reporting that auto-captures reproduction steps, console logs, network requests, and suggests fixes. *(Freemium)*
 - [Qodo (formerly CodiumAI)](https://www.qodo.ai) - Generates comprehensive test suites, finds edge cases, and validates code logic automatically. *(Freemium)*
 - [Trunk](https://trunk.io) - AI-powered code quality platform: linting, formatting, security checks, merge queue management. *(Freemium)*
@@ -237,12 +237,12 @@ AI tools that help find bugs, generate tests, explain errors, and ensure code qu
 - [Playwright](https://playwright.dev) - Microsoft's end-to-end testing framework. AI agents generate Playwright tests for reliable cross-browser testing. *(Free, open-source)*
 - [Cypress](https://www.cypress.io) - Modern web testing framework. Combine with AI to auto-generate test suites for your vibe coded apps. *(Freemium, open-source)*
 - [Checkly](https://www.checklyhq.com) - Monitoring and testing for APIs and web apps. AI-assisted test creation with Playwright. *(Freemium)*
-
----
-
 ## AI Documentation Tools
 
 AI that writes, maintains, and improves your documentation.
+
+
+---
 
 - [Mintlify](https://mintlify.com) - AI-native documentation platform. Docs-as-code workflow (Git + MDX). Auto-generates `llms.txt` files and MCP servers so AI agents can read your docs. *(Freemium)*
 - [ReadMe](https://readme.com) - Interactive API documentation platform with AI-powered search, content auditing, and developer analytics. *(Freemium)*
@@ -251,9 +251,6 @@ AI that writes, maintains, and improves your documentation.
 - [Notion AI](https://www.notion.so/product/ai) - AI writing assistant built into Notion. Generate, summarize, and improve technical documentation. *(Add-on to Notion, $10/mo)*
 - [Scribe](https://scribehow.com) - Auto-generates step-by-step process documentation from screen captures. Great for SOPs and tutorials. *(Freemium)*
 - [Theneo](https://www.theneo.io) - AI-powered API documentation generator. Import from Postman, Swagger, or GraphQL → get beautiful docs. *(Freemium)*
-
----
-
 ## Prompt Engineering for Code
 
 ### Guides & Techniques
@@ -267,7 +264,6 @@ How to write better prompts that produce better AI-generated code.
 - [Learn Prompting](https://learnprompting.org) - Free, open-source guide to prompt engineering. Covers basics to advanced techniques.
 - [Cursor Prompting Tips](https://docs.cursor.com/guides) - Cursor's official guide to getting the best results from Composer, Tab, and Chat.
 - [Vibe Coding Academy](https://vibecodingacademy.ai) - Dedicated learning platform for vibe coding techniques and AI-assisted development workflows.
-
 ### Prompt Libraries & Templates
 
 Pre-built prompts optimized for common coding tasks.
@@ -276,22 +272,24 @@ Pre-built prompts optimized for common coding tasks.
 - [Fabric](https://github.com/danielmiessler/fabric) - Open-source framework for augmenting humans using AI. Includes coding-specific "patterns" for code review, security analysis, and more.
 - [Prompt Hub](https://www.prompthub.us) - Library of tested, production-ready prompts for various coding tasks.
 - [FlowGPT](https://flowgpt.com) - Community platform for sharing and discovering effective AI prompts.
-
 ### Rules Files & System Prompts
 
 Configuration files that tell AI coding agents how to behave in your specific project.
+
+
+---
 
 - [Awesome CursorRules](https://github.com/PatrickJS/awesome-cursorrules) - Community collection of `.cursorrules` files for different frameworks and languages. Very high star count.
 - [cursor.directory](https://cursor.directory) - Browse and share Cursor rules organized by framework and tech stack.
 - [Claude Code CLAUDE.md Guide](https://docs.anthropic.com/en/docs/claude-code/memory) - How to configure Claude Code's behavior per-project using CLAUDE.md memory files.
 - [Awesome AI Rules](https://github.com/sanjeed5/awesome-ai-rules) - Collection of system prompts and rules for various AI coding tools.
 - [Awesome Copilot Instructions](https://github.com/alexchao26/awesome-copilot-instructions) - Curated `.github/copilot-instructions.md` files for customizing Copilot.
-
----
-
 ## Context Engineering
 
 The emerging discipline of feeding AI the right context to improve output quality - arguably the most important skill in vibe coding.
+
+
+---
 
 - [Repomix](https://github.com/yamadashy/repomix) - Pack your entire repository into a single AI-friendly file for pasting into LLM chats. Smart token management. *(Free, open-source)*
 - [code2prompt](https://github.com/mufeedvh/code2prompt) - Convert your codebase into an LLM-ready prompt with directory traversal, filtering, and token counting. *(Free, open-source)*
@@ -301,9 +299,6 @@ The emerging discipline of feeding AI the right context to improve output qualit
 - [Codetex](https://codetex.io) - Convert your code into context-optimized formats for AI consumption. *(Free)*
 - [llms.txt Standard](https://llmstxt.org) - Proposed standard for websites to provide LLM-friendly versions of their content (like robots.txt but for AI). *(Specification)*
 - [CONTRIBUTING.md / CLAUDE.md patterns](https://docs.anthropic.com/en/docs/claude-code/memory) - Using project documentation files to give AI agents architectural context, coding standards, and project-specific instructions.
-
----
-
 ## MCP Servers for Coding
 
 [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is an open standard by Anthropic that lets AI agents securely connect to tools, databases, and services. Think of it as "plugins for AI."
@@ -321,7 +316,6 @@ From the official MCP repository maintained by Anthropic.
 - [Memory MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) - Give AI persistent memory via a knowledge graph.
 - [Fetch MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) - HTTP requests - let AI fetch web content and APIs.
 - [Git MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/git) - Git operations - let AI interact with git history and branches.
-
 ### Developer Tools
 
 - [Docker MCP Server](https://github.com/ckreiling/mcp-server-docker) - Manage Docker containers, images, and compose services.
@@ -329,7 +323,6 @@ From the official MCP repository maintained by Anthropic.
 - [Sentry MCP Server](https://github.com/getsentry/sentry-mcp) - Access error reports, stacktraces, and issue data from Sentry.
 - [Kubernetes MCP Server](https://github.com/strowk/mcp-k8s-go) - Manage Kubernetes clusters, pods, and deployments.
 - [AWS MCP Server](https://github.com/rishikavikondala/mcp-server-aws) - Interact with AWS services from your AI agent.
-
 ### Database
 
 - [Supabase MCP Server](https://github.com/supabase-community/supabase-mcp) - Manage Supabase projects: database, auth, storage, edge functions.
@@ -337,7 +330,6 @@ From the official MCP repository maintained by Anthropic.
 - [Neo4j MCP Server](https://github.com/neo4j-contrib/mcp-neo4j) - Graph database queries and knowledge graph building.
 - [MySQL MCP Server](https://github.com/benborla/mcp-server-mysql) - Connect to and query MySQL databases.
 - [Redis MCP Server](https://github.com/redis/mcp-redis) - Interact with Redis for caching and data operations.
-
 ### Productivity & Business
 
 - [Notion MCP Server](https://github.com/makenotion/notion-mcp-server) - Search, read, and create Notion pages and databases.
@@ -346,24 +338,22 @@ From the official MCP repository maintained by Anthropic.
 - [Jira MCP Server](https://github.com/sooperset/mcp-atlassian) - Create and manage Jira issues and Confluence pages.
 - [Google Drive MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) - Search and read files in Google Drive.
 - [Google Calendar MCP Server](https://github.com/nspady/google-calendar-mcp) - Read and manage calendar events.
-
 ### Web & Browser
 
 - [Firecrawl](https://github.com/mendableai/firecrawl-mcp-server) - Industry-standard web scraping. Converts websites into clean, LLM-ready markdown.
 - [Playwright MCP Server](https://github.com/executeautomation/mcp-playwright) - Browser automation with Playwright - let AI interact with complex web apps.
 - [Browserbase MCP Server](https://github.com/browserbase/mcp-server-browserbase) - Cloud browser sessions for AI agents.
-
 ### Design
 
 - [Figma MCP Server](https://github.com/nicobailon-figma/figma-mcp) - Inspect Figma designs: layout, tokens, components, variants. Bridges the design-to-code gap.
-
 ### Search
 
 - [Brave Search MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search) - Web search via Brave's API.
 - [Tavily Search MCP Server](https://github.com/tavily-ai/tavily-mcp) - AI-optimized web search that returns clean, synthesized results.
 - [Exa MCP Server](https://github.com/exa-labs/exa-mcp-server) - Semantic/neural search - finds content by meaning, not just keywords.
-
 ### MCP Directories & Aggregators
+
+---
 
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) - The most comprehensive curated list of MCP servers.
 - [MCP.so](https://mcp.so) - Directory of MCP servers with search and categories.
@@ -371,12 +361,12 @@ From the official MCP repository maintained by Anthropic.
 - [Composio](https://composio.dev) - Meta-platform that exposes 250+ integrations through a single MCP endpoint.
 - [Glama](https://glama.ai/mcp) - MCP server directory with quality ratings and reviews.
 - [MCPHub](https://mcphub.io) - Community-driven MCP server registry with installation guides and reviews.
-
----
-
 ## AI Workflow Automation
 
 Visual and code-based tools for connecting AI agents into automated pipelines.
+
+
+---
 
 - [n8n](https://n8n.io) - Open-source workflow automation with AI-native nodes. Visual drag-and-drop builder. Self-hostable. *(Freemium, open-source)*
 - [Dify](https://dify.ai) - Open-source LLM app platform with visual workflow builder, RAG pipeline, agent orchestration, and observability. *(Freemium, open-source)*
@@ -386,12 +376,12 @@ Visual and code-based tools for connecting AI agents into automated pipelines.
 - [Make (Integromat)](https://www.make.com) - Visual automation platform with AI integrations. More granular control than Zapier. *(Freemium)*
 - [Pipedream](https://pipedream.com) - Developer-first automation platform. Write code + visual builder + AI. *(Freemium)*
 - [Activepieces](https://www.activepieces.com) - Open-source alternative to Zapier with AI automation pieces. *(Free, open-source)*
-
----
-
 ## Multi-Agent Frameworks
 
 Frameworks for orchestrating multiple AI agents working together on complex tasks.
+
+
+---
 
 - [LangChain](https://www.langchain.com) - The most popular framework for building LLM applications. Chains, agents, RAG, tool use. *(Free, open-source)*
 - [LangGraph](https://langchain-ai.github.io/langgraph/) - Framework for building stateful, multi-actor applications with LLMs. Built on LangChain. *(Free, open-source)*
@@ -401,9 +391,6 @@ Frameworks for orchestrating multiple AI agents working together on complex task
 - [Haystack](https://haystack.deepset.ai) - Open-source framework for building production-ready LLM applications, RAG pipelines, and agents. *(Free, open-source)*
 - [LlamaIndex](https://www.llamaindex.ai) - Data framework for connecting LLMs with external data sources. Best for RAG applications. *(Free, open-source)*
 - [Smolagents](https://github.com/huggingface/smolagents) - Hugging Face's lightweight multi-agent framework. Simple, hackable. *(Free, open-source)*
-
----
-
 ## Local AI for Coding
 
 Run AI coding assistants locally on your machine for privacy, speed, offline access, and zero API costs.
@@ -419,10 +406,12 @@ Run AI coding assistants locally on your machine for privacy, speed, offline acc
 - [vLLM](https://github.com/vllm-project/vllm) - High-throughput LLM serving engine. Best for production-grade local deployments. *(Free, open-source)*
 - [Llamafile](https://github.com/Mozilla-Ocho/llamafile) - Mozilla's single-file LLM distribution. Download one file, run it - no installation needed. *(Free, open-source)*
 - [Open WebUI](https://github.com/open-webui/open-webui) - Self-hosted ChatGPT-like UI for Ollama and other local LLMs. *(Free, open-source)*
-
 ### Open Source Code Models
 
 Models specifically trained or fine-tuned for code generation.
+
+
+---
 
 - [DeepSeek Coder V2](https://github.com/deepseek-ai/DeepSeek-Coder-V2) - State-of-the-art open-source code model. Competitive with GPT-4 on coding benchmarks. *(Free, open-source)*
 - [Qwen 2.5 Coder](https://github.com/QwenLM/Qwen2.5-Coder) - Alibaba's code-specialized LLM. Strong multi-language support with variants from 1.5B to 32B parameters. *(Free, open-source)*
@@ -432,12 +421,12 @@ Models specifically trained or fine-tuned for code generation.
 - [Codestral](https://mistral.ai/news/codestral) - Mistral AI's code model. Strong performance on code generation and fill-in-the-middle tasks. *(Free for research)*
 - [Granite Code](https://github.com/ibm-granite/granite-code-models) - IBM's enterprise-grade code models. 3B, 8B, 20B, 34B sizes. Trained on 116 programming languages. *(Free, open-source)*
 - [Stable Code](https://stability.ai/stable-code) - Stability AI's code completion model. 3B parameters, optimized for speed. *(Free, open-source)*
-
----
-
 ## AI-Powered DevOps & Infrastructure
 
 AI tools for deployment, CI/CD, cloud management, and infrastructure.
+
+
+---
 
 - [Vercel](https://vercel.com) - The go-to platform for deploying frontend apps and full-stack Next.js projects. One-click deploy from GitHub. *(Freemium)*
 - [Netlify](https://www.netlify.com) - Instant deploys for web projects with CI/CD, serverless functions, and edge computing. *(Freemium)*
@@ -449,12 +438,12 @@ AI tools for deployment, CI/CD, cloud management, and infrastructure.
 - [Neon](https://neon.tech) - Serverless Postgres with branching, autoscaling, and a generous free tier. *(Freemium)*
 - [Terraform AI](https://www.hashicorp.com/blog/introducing-ai-assisted-terraform-development) - Infrastructure as code with AI assistance for generating cloud configurations. *(Freemium)*
 - [Pulumi AI](https://www.pulumi.com/ai/) - Generate infrastructure as code from natural language descriptions. *(Freemium)*
-
----
-
 ## AI for Mobile Development
 
 Build mobile apps with AI assistance.
+
+
+---
 
 - [FlutterFlow](https://flutterflow.io) - Visual app builder for Flutter. Drag-and-drop UI + AI features for generating screens and logic. *(Freemium)*
 - [Expo + AI](https://expo.dev) - React Native framework with AI-assisted development tools. Build for iOS/Android/web from one codebase. *(Freemium)*
@@ -463,12 +452,12 @@ Build mobile apps with AI assistance.
 - [Adalo](https://www.adalo.com) - No-code app builder for native mobile apps with AI assistance. *(Freemium)*
 - [Retool Mobile](https://retool.com/products/mobile) - Build mobile internal tools with drag-and-drop and AI assistance. *(Freemium)*
 - [Glide](https://www.glideapps.com) - Build mobile apps from Google Sheets and Airtable data. No coding needed. *(Freemium)*
-
----
-
 ## AI for Game Development
 
 AI tools specifically for game creation and game assets.
+
+
+---
 
 - [Unity Muse](https://unity.com/products/muse) - Unity's AI suite: generate textures, animations, and code directly within the Unity editor. *(Paid)*
 - [Scenario](https://www.scenario.com) - AI-powered game art generation. Create consistent game assets (characters, items, environments). *(Freemium)*
@@ -479,12 +468,12 @@ AI tools specifically for game creation and game assets.
 - [Convai](https://convai.com) - AI-powered conversation engine for game characters. Create NPCs that talk naturally. *(Freemium)*
 - [Promethean AI](https://www.prometheanai.com) - AI assistant for 3D world building and virtual environment creation. *(Paid)*
 - [Rosebud AI](https://www.rosebud.ai) - Build games from text descriptions with AI. Generates game mechanics, levels, and assets. *(Freemium)*
-
----
-
 ## AI Git & Version Control
 
 AI tools for commit messages, changelogs, release notes, and git workflows.
+
+
+---
 
 - [aicommits](https://github.com/Nutlope/aicommits) - CLI tool that writes your git commit messages for you with AI. Supports OpenAI, Ollama, and more. *(Free, open-source)*
 - [GitLens AI](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - VS Code extension with AI-powered commit message generation, git blame, and history visualization. *(Freemium)*
@@ -500,12 +489,12 @@ AI tools for commit messages, changelogs, release notes, and git workflows.
 - [LazyGit](https://github.com/jesseduffield/lazygit) - Terminal UI for git that makes complex git operations simple. Pairs great with AI agents. *(Free, open-source)*
 - [git-absorb](https://github.com/tummychow/git-absorb) - Automatically absorb staged changes into existing commits. Reduces messy git history. *(Free, open-source)*
 - [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) - Generate changelogs from Conventional Commits git history. *(Free, open-source)*
-
----
-
 ## AI Browser Extensions
 
 Browser extensions that bring AI assistance to your web browsing and development workflow.
+
+
+---
 
 - [Sider](https://sider.ai) - Multi-model AI sidebar for Chrome/Edge. Chat, summarize pages, analyze PDFs, translate - without switching tabs. *(Freemium)*
 - [Merlin AI](https://www.getmerlin.in) - All-in-one AI extension. Summarize YouTube videos, research, write emails, generate code on any webpage. *(Freemium)*
@@ -520,12 +509,12 @@ Browser extensions that bring AI assistance to your web browsing and development
 - [React DevTools](https://react.dev/learn/react-developer-tools) - Essential for debugging React apps built with AI. Inspect component hierarchy and state. *(Free)*
 - [Vue DevTools](https://devtools.vuejs.org) - Debug Vue.js applications. Inspect components, state, and events. *(Free)*
 - [Redux DevTools](https://github.com/reduxjs/redux-devtools) - Time-travel debugging for Redux state management. *(Free, open-source)*
-
----
-
 ## AI for Data Science & Analytics
 
 AI tools that make data analysis accessible to everyone - the data equivalent of vibe coding.
+
+
+---
 
 - [Julius AI](https://julius.ai) - Upload data (CSV, Excel, SQL) → ask questions in plain English → get analysis, charts, and insights. No coding needed. *(Freemium)*
 - [Google NotebookLM](https://notebooklm.google.com) - AI research assistant by Google. Upload documents → get AI-powered summaries, Q&A, and even podcast-style audio overviews. *(Free)*
@@ -541,12 +530,12 @@ AI tools that make data analysis accessible to everyone - the data equivalent of
 - [Metabase](https://www.metabase.com) - Open-source BI tool with natural language querying. Ask data questions in plain English. *(Freemium, open-source)*
 - [Apache Superset](https://superset.apache.org) - Open-source data visualization and exploration platform. *(Free, open-source)*
 - [Retool](https://retool.com) - Build internal tools with AI-assisted component generation and database queries. *(Freemium)*
-
----
-
 ## AI-Powered Backend & APIs
 
 AI-native backend platforms and tools for building APIs and server-side infrastructure.
+
+
+---
 
 - [Supabase](https://supabase.com) - Open-source Firebase alternative with Postgres, auth, storage, edge functions, and vector embeddings for AI. *(Freemium, open-source)*
 - [Convex](https://www.convex.dev) - Reactive backend with end-to-end TypeScript. AI-friendly because queries are code, not SQL. Built-in agentic components. *(Freemium)*
@@ -562,12 +551,12 @@ AI-native backend platforms and tools for building APIs and server-side infrastr
 - [tRPC](https://trpc.io) - End-to-end typesafe APIs for TypeScript. No code generation, no schema - just types. AI-friendly. *(Free, open-source)*
 - [Drizzle ORM](https://orm.drizzle.team) - TypeScript ORM that is lightweight and SQL-like. AI generates better SQL when using Drizzle. *(Free, open-source)*
 - [Prisma](https://www.prisma.io) - Next-generation ORM for Node.js and TypeScript. Schema-first approach that AI tools understand well. *(Freemium, open-source)*
-
----
-
 ## AI Image Generation
 
 AI tools for creating images, graphics, icons, and visual assets for your projects.
+
+
+---
 
 - [Midjourney](https://www.midjourney.com) - The aesthetic benchmark. Best for cinematic, artistic, and high-impact visuals. V7 is photorealistic. *(Paid, from $10/mo)*
 - [DALL·E / GPT Image](https://openai.com/dall-e) - OpenAI's image generator, now integrated into ChatGPT. Best semantic understanding of complex prompts. *(Via ChatGPT subscription)*
@@ -586,12 +575,12 @@ AI tools for creating images, graphics, icons, and visual assets for your projec
 - [Shields.io](https://shields.io) - Generate badges for your GitHub README. Essential for the awesome list aesthetic. *(Free)*
 - [Carbon](https://carbon.now.sh) - Create beautiful images of your source code. Great for social media posts about your projects. *(Free)*
 - [ray.so](https://ray.so) - Create beautiful code snippets for sharing. By Raycast. *(Free)*
-
----
-
 ## AI Video Generation
 
 Create videos, demos, and tutorials with AI - useful for product showcases and developer content.
+
+
+---
 
 - [Runway](https://runwayml.com) - Professional AI video generation and editing. Gen-4 for cinematic quality. Also does image-to-video. *(Freemium)*
 - [Kling AI](https://klingai.com) - Photorealistic AI video with industry-leading motion physics. 1080p/4K output. *(Freemium)*
@@ -605,12 +594,12 @@ Create videos, demos, and tutorials with AI - useful for product showcases and d
 - [Excalidraw](https://excalidraw.com) - Virtual whiteboard with hand-drawn feel. Great for architecture diagrams and brainstorming. *(Free, open-source)*
 - [Mermaid](https://mermaid.js.org) - Generate diagrams and charts from markdown-like text. Flowcharts, sequence diagrams, ERDs. *(Free, open-source)*
 - [D2](https://d2lang.com) - Modern diagram scripting language. Text-to-diagram for architecture docs. *(Free, open-source)*
-
----
-
 ## AI Audio & Music
 
 AI tools for generating audio, music, sound effects, and voice for your applications.
+
+
+---
 
 - [ElevenLabs](https://elevenlabs.io) - Industry-leading AI voice generation and text-to-speech. Clone voices, generate realistic narration. *(Freemium)*
 - [Suno](https://suno.com) - Generate full songs (lyrics, vocals, instruments) from text prompts. Great for app background music. *(Freemium)*
@@ -622,12 +611,12 @@ AI tools for generating audio, music, sound effects, and voice for your applicat
 - [Bark](https://github.com/suno-ai/bark) - Open-source text-to-audio model by Suno. Generates realistic speech, music, and sound effects. *(Free, open-source)*
 - [AudioCraft](https://github.com/facebookresearch/audiocraft) - Meta's open-source audio generation framework. MusicGen for music, AudioGen for sound effects. *(Free, open-source)*
 - [Freesound](https://freesound.org) - Collaborative database of Creative Commons licensed sounds. Essential for app sound effects. *(Free)*
-
----
-
 ## AI Writing Tools for Developers
 
 AI tools for writing documentation, READMEs, marketing copy, and technical content.
+
+
+---
 
 - [ReadmeAI](https://github.com/eli64s/readme-ai) - AI-powered README generator. Scan your repo → get a professional, structured README.md. *(Free, open-source)*
 - [Grammarly](https://www.grammarly.com) - AI writing assistant for grammar, clarity, and tone. Essential for documentation and blog posts. *(Freemium)*
@@ -641,12 +630,12 @@ AI tools for writing documentation, READMEs, marketing copy, and technical conte
 - [Markdoc](https://markdoc.dev) - Stripe's markdown-based authoring framework. Great foundation for AI-generated documentation. *(Free, open-source)*
 - [MDX](https://mdxjs.com) - Markdown + JSX. Write content with embedded React components. The standard for modern docs. *(Free, open-source)*
 - [Docusaurus](https://docusaurus.io) - Meta's documentation framework. Build beautiful docs sites with markdown. *(Free, open-source)*
-
----
-
 ## AI Search & Research
 
 AI-powered search engines and research tools for finding code, packages, and technical information.
+
+
+---
 
 - [Perplexity AI](https://www.perplexity.ai) - AI-powered search engine with cited sources. Better than Google for technical research questions. *(Freemium)*
 - [Phind](https://www.phind.com) - AI search engine built for developers. *(Note: service shut down Jan 2026, but alternatives exist)*
@@ -663,12 +652,12 @@ AI-powered search engines and research tools for finding code, packages, and tec
 - [Google AI Studio](https://aistudio.google.com) - Prototype with Gemini models for free. Test prompts, build with AI. *(Free)*
 - [OpenRouter](https://openrouter.ai) - Unified API for accessing 100+ AI models. One API key for GPT-4, Claude, Gemini, Llama, etc. *(Pay-per-use)*
 - [LiteLLM](https://github.com/BerriAI/litellm) - Open-source proxy for 100+ LLMs. Use any model with a unified OpenAI-compatible API. *(Free, open-source)*
-
----
-
 ## Benchmarks & Comparisons
 
 Tools and resources for comparing AI coding assistants and measuring performance.
+
+
+---
 
 - [SWE-bench](https://www.swebench.com) - The industry-standard benchmark for evaluating AI coding agents on real-world GitHub issues. *(Free)*
 - [Aider Leaderboard](https://aider.chat/docs/leaderboards/) - Performance comparison of LLMs on coding tasks, measured by Aider's edit format benchmarks. *(Free)*
@@ -679,9 +668,6 @@ Tools and resources for comparing AI coding assistants and measuring performance
 - [LLM Pricing Tracker](https://llmpricecheck.com) - Compare pricing across AI model providers. *(Free)*
 - [Cursor vs Copilot vs Windsurf](https://www.reddit.com/r/cursor/) - Community comparisons on Reddit (search in r/cursor, r/programming). *(Free)*
 - [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar) - Industry-respected assessment of tools, techniques, and platforms including AI coding tools. *(Free)*
-
----
-
 ## Learning Resources
 
 ### Articles & Blog Posts
@@ -693,7 +679,6 @@ Tools and resources for comparing AI coding assistants and measuring performance
 - [Simon Willison's Blog](https://simonwillison.net) - One of the most insightful voices on practical AI tool usage. LLM, prompt engineering, and tool reviews.
 - [Swyx's AI Engineering Posts](https://www.latent.space/about) - Deep technical content at the intersection of AI and software engineering.
 - [An Opinionated Guide to Vibe Coding](https://roadmap.sh/articles/vibe-coding) - How to do vibe coding well without accumulating technical debt.
-
 ### YouTube Channels & Videos
 
 - [Fireship](https://www.youtube.com/@Fireship) - Fast-paced tech explainers (100-second format). Excellent coverage of AI coding tools.
@@ -713,7 +698,6 @@ Tools and resources for comparing AI coding assistants and measuring performance
 - [Matt Shumer](https://www.youtube.com/@mattshumer) - AI founder building in public. Deep dives into AI agent development.
 - [Kevin Powell](https://www.youtube.com/@KevinPowell) - CSS expert. Useful for understanding and fixing AI-generated frontend code.
 - [Tech With Tim](https://www.youtube.com/@TechWithTim) - Python tutorials and AI project walkthroughs for beginners.
-
 ### Courses
 
 - [DeepLearning.AI - Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) - Free course by Andrew Ng on effective prompting. A must-take for anyone using AI to code.
@@ -726,7 +710,6 @@ Tools and resources for comparing AI coding assistants and measuring performance
 - [Frontend Masters](https://frontendmasters.com) - Expert-led web development courses. AI and tools coverage. *(Paid)*
 - [The Odin Project](https://www.theodinproject.com) - Free full-stack web development curriculum. Pair with AI for accelerated learning. *(Free)*
 - [Codecademy](https://www.codecademy.com) - Interactive coding courses with AI features for personalized learning paths. *(Freemium)*
-
 ### Books
 
 - *"Prompt Engineering for Generative AI"* by James Phoenix & Mike Taylor - O'Reilly guide to writing effective prompts for code generation and more.
@@ -745,8 +728,9 @@ Tools and resources for comparing AI coding assistants and measuring performance
 - [AI Valley](https://www.theaivalley.com) - Curated AI tools, news, and tutorials.
 - [Superhuman AI](https://www.superhuman.ai) - Daily AI news and tool discoveries.
 - [The Rundown AI](https://www.therundown.ai) - Daily AI newsletter with 600K+ subscribers.
-
 ### Podcasts
+
+---
 
 - [Latent Space](https://www.latent.space/podcast) - The technical AI engineering podcast by Swyx + Alessio. Deep dives into AI infra, agents, and coding.
 - [Practical AI](https://practicalai.fm) - Making AI practical, productive, and accessible for all developers.
@@ -762,14 +746,12 @@ Tools and resources for comparing AI coding assistants and measuring performance
 - [AI Explained](https://www.youtube.com/@aiexplained-official) - Clear, well-researched explanations of AI developments and capabilities.
 - [Machine Learning Street Talk](https://www.youtube.com/@MachineLearningStreetTalk) - Deep technical AI discussions with researchers.
 - [The TWIML AI Podcast](https://twimlai.com) - This Week in Machine Learning & AI. Enterprise AI use cases and research.
-
----
-
 ## Communities
 
 Places to learn, share, and discuss vibe coding with others.
 
 ### Reddit
+
 - [r/vibecoding](https://www.reddit.com/r/vibecoding/) - The main subreddit for vibe coding discussion, tool sharing, and project showcases.
 - [r/ChatGPTCoding](https://www.reddit.com/r/ChatGPTCoding/) - Active community for AI-assisted coding tips, tricks, and projects.
 - [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/) - Claude-specific community with coding discussion, prompts, and use cases.
@@ -777,8 +759,8 @@ Places to learn, share, and discuss vibe coding with others.
 - [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) - Community for running AI locally. Great for local coding AI setups.
 - [r/programming](https://www.reddit.com/r/programming/) - General programming community with frequent AI tool discussions.
 - [r/SideProject](https://www.reddit.com/r/SideProject/) - Share projects you've built (great for showcasing vibe coded apps).
-
 ### Discord
+
 - [Cursor Discord](https://discord.com/invite/cursor) - Official Cursor community. Rules sharing, tips, feature requests.
 - [Anthropic Discord](https://discord.gg/anthropic) - Official Anthropic community for Claude and Claude Code users.
 - [Replit Discord](https://discord.com/invite/replit) - Replit community for AI-assisted development.
@@ -790,8 +772,10 @@ Places to learn, share, and discuss vibe coding with others.
 - [Hugging Face Discord](https://discord.gg/huggingface) - Open-source AI model community. Great for local AI coding setups.
 - [LangChain Discord](https://discord.gg/langchain) - Community for building LLM applications, agents, and RAG systems.
 - [n8n Discord](https://discord.gg/n8n) - Automation community for AI workflow building.
-
 ### Other
+
+---
+
 - [Hacker News](https://news.ycombinator.com) - The tech community where AI coding discussions and tool launches happen.
 - [Dev.to](https://dev.to/t/ai) - Developer blogging platform with active AI coding tag.
 - [Indie Hackers](https://www.indiehackers.com) - Community of indie makers, many using AI to build and ship products.
@@ -799,12 +783,12 @@ Places to learn, share, and discuss vibe coding with others.
 - [X/Twitter AI Dev Community](https://x.com) - Follow #vibecoding, #aitools, @karpathy, @AnthropicAI, @cursor_ai, @OpenAI.
 - [GitHub Discussions](https://github.com/features/discussions) - Many AI tool repos have active discussion forums. Engage directly with maintainers.
 - [Lobsters](https://lobste.rs) - Invite-only tech community like Hacker News. High-quality AI and dev tool discussions.
-
----
-
 ## Case Studies & Showcases
 
 Real projects built entirely or primarily through vibe coding.
+
+
+---
 
 - [Built with Cursor](https://www.builtwithcursor.com) - Collection of production apps and projects built using Cursor IDE.
 - [Made with Lovable](https://lovable.dev/showcase) - Apps created using Lovable's AI app builder.
@@ -813,14 +797,12 @@ Real projects built entirely or primarily through vibe coding.
 - [vibe.coder.party](https://vibecode.party) - Community showcase of apps built through vibe coding.
 - [bolt.new Examples](https://bolt.new) - Example projects and templates built with bolt.new.
 - [Product Hunt AI Category](https://www.producthunt.com/topics/artificial-intelligence) - Daily launches of apps built with vibe coding workflows.
-
----
-
 ## Best Practices & Workflows
 
 Proven strategies for effective vibe coding, avoiding common traps.
 
 ### The "Think First, Code Second" Workflow
+
 1. **Define requirements** in a document before starting any AI session
 2. **Create an architecture plan** (AI can help with this too)
 3. **Break work into small tasks** - one feature or component at a time
@@ -829,6 +811,7 @@ Proven strategies for effective vibe coding, avoiding common traps.
 6. **Commit frequently** to git - create checkpoints you can revert to
 
 ### Golden Rules
+
 -  **Use rules/config files** (`.cursorrules`, `CLAUDE.md`) to give AI your project's conventions
 -  **Give AI maximum context** - paste relevant files, types, error logs
 -  **Be specific** in prompts - "Add a login form with email/password using React Hook Form and Zod validation" beats "Add login"
@@ -841,6 +824,7 @@ Proven strategies for effective vibe coding, avoiding common traps.
 -  **Don't use AI for security-critical code** without expert review
 
 ### The Two-AI Approach (Advanced)
+
 Many experienced vibe coders use **two tools** together:
 1. **Cursor** for fast, iterative UI/UX work and inline editing
 2. **Claude Code** for deep architectural reasoning, complex refactors, and comprehensive code reviews
@@ -854,6 +838,7 @@ This combination leverages each tool's strengths for maximum productivity.
 Balanced perspectives on the vibe coding movement.
 
 ### In Favor
+
 - *"There's a new kind of coding I call 'vibe coding'..."* - **Andrej Karpathy**, AI researcher, former OpenAI/Tesla
 - *"AI tools have legitimately changed how I ship software."* - Developer testimonials across Twitter/X
 - *"90% of developers now use AI coding assistants in their workflow."* - GitHub/Stack Overflow surveys, 2025-2026
@@ -861,6 +846,7 @@ Balanced perspectives on the vibe coding movement.
 - Experienced developers report 3-10x productivity increases on routine tasks
 
 ### Concerns
+
 - **Maintainability** - Code you don't understand is code you can't debug when it breaks at 2 AM
 - **Security** - AI-generated code may contain vulnerabilities that a non-coder can't identify
 - **Over-reliance** - Teams that skip understanding fundamentals face scaling challenges
@@ -874,6 +860,9 @@ Balanced perspectives on the vibe coding movement.
 ## Related Awesome Lists
 
 Other curated lists that complement this one.
+
+
+---
 
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - Massive prompt collection (100K+ stars)
 - [Awesome CursorRules](https://github.com/PatrickJS/awesome-cursorrules) - Cursor configuration files
@@ -890,9 +879,6 @@ Other curated lists that complement this one.
 - [Awesome Tailwind CSS](https://github.com/aniftyco/awesome-tailwindcss) - Tailwind resources (the default CSS framework AI tools generate)
 - [Awesome TypeScript](https://github.com/dzharii/awesome-typescript) - TypeScript resources (the language AI understands best)
 - [Free for Dev](https://github.com/ripienaar/free-for-dev) - List of free SaaS, PaaS, IaaS offerings for developers
-
----
-
 ## Contributing
 
 This list is community-maintained and I actively review every PR and issue. Please read the [contribution guidelines](CONTRIBUTING.md) first.
@@ -912,3 +898,4 @@ I aim to review all PRs within 24 hours.
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, the authors have waived all copyright and related or neighboring rights to this work.
+
