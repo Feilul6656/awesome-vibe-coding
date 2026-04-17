@@ -14,6 +14,14 @@ The term was [coined by Andrej Karpathy](https://x.com/karpathy/status/188619218
 
 ---
 
+## ⚡ The Starter Kit
+Overwhelmed by 500+ tools? If you are just starting out with vibe coding, start here:
+1. **[Cursor](https://cursor.sh)** - The best overall AI code editor. *(Desktop IDE)*
+2. **[Lovable](https://lovable.dev)** - The best way to build a web app if you don't know how to code. *(Web Builder)*
+3. **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** - The best tool if you are already comfortable in the terminal. *(CLI)*
+
+---
+
 ## Contents
 
 - [AI Coding Agents](#ai-coding-agents)

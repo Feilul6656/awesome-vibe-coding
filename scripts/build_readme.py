@@ -42,8 +42,14 @@ def format_tool(tool):
         line += f" *Personal pick - {tool['personal_pick']}*"
         
     if tool['tags']:
-        tags_str = ", ".join(tool['tags'])
-        line += f" *({tags_str})*"
+        formatted_tags = []
+        for t in tool['tags']:
+            # Title case and replace hyphens for cleaner look (e.g. open-source -> Open Source)
+            clean_tag = t.strip().replace('-', ' ').title()
+            # Fix capitalization for specific words if needed (e.g. Mac)
+            clean_tag = clean_tag.replace('Mac Only', 'Mac')
+            formatted_tags.append(f"**[{clean_tag}]**")
+        line += " " + " ".join(formatted_tags)
         
     return line + "\n"
 
