@@ -44,6 +44,13 @@ async function loadData() {
         }
     } catch (e) {
         console.error("Failed to load", e);
+        document.getElementById('toolsGrid').innerHTML = `
+            <div style="grid-column: 1/-1; text-align: center; color: red;">
+                <h3>Error Loading Tools Database</h3>
+                <p>${e.message}</p>
+                <p>Ensure you are accessing via a proper web server (http://) and not local files (file:///).</p>
+            </div>
+        `;
     }
 }
 
