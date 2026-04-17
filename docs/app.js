@@ -52,26 +52,27 @@ function renderSidebar() {
     list.innerHTML = '';
     
     // Add "All Tools"
-    createSidebarItem(list, 'All Categories', () => {
+    createSidebarItem(list, 'All Categories', allTools.length, () => {
         document.getElementById('searchInput').value = '';
         renderTools(allTools, "All Tools");
     });
     
     // Add "My Stack (Favorites)"
-    createSidebarItem(list, '💖 My Stack', () => {
+    const favCount = allTools.filter(t => favorites.has(t.name)).length;
+    createSidebarItem(list, '💖 My Stack', favCount, () => {
         const favTools = allTools.filter(t => favorites.has(t.name));
         renderTools(favTools, "My Stack (Favorites)");
     });
 
     masterData.forEach(cat => {
-        createSidebarItem(list, cat.name, () => renderTools(cat.tools, cat.name));
+        createSidebarItem(list, cat.name, cat.tools.length, () => renderTools(cat.tools, cat.name));
     });
 }
 
-function createSidebarItem(parent, text, onClick) {
+function createSidebarItem(parent, text, count, onClick) {
     const li = document.createElement('li');
     li.className = 'category-item' + (text === 'All Categories' ? ' active' : '');
-    li.innerText = text;
+    li.innerHTML = `<span>${text}</span> <span class="count-badge">${count}</span>`;
     li.onclick = () => {
         document.querySelectorAll('.category-item').forEach(el => el.classList.remove('active'));
         li.classList.add('active');
@@ -179,7 +180,17 @@ function renderTools(toolsToRender, title) {
 }
 
 function setupSearch() {
-    document.getElementById('searchInput').addEventListener('input', (e) => applyFilters());
+    const input = document.getElementById('searchInput');
+    input.addEventListener('input', (e) => applyFilters());
+    
+    // Escape key to clear search instantly
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            setSearchQuery('');
+            input.blur();
+        }
+    });
 }
 
 window.applyFilters = function() {
@@ -245,13 +256,19 @@ window.toggleFavorite = function(toolName, btn) {
     if (favorites.has(toolName)) {
         favorites.delete(toolName);
         btn.classList.remove('active');
+        showToast("Removed from My Stack");
         btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>`;
     } else {
         favorites.add(toolName);
         btn.classList.add('active');
+        showToast("Saved to My Stack ❤️");
         btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>`;
     }
     localStorage.setItem('vibe_favorites', JSON.stringify([...favorites]));
+    
+    // Update My Stack count
+    const favCount = document.querySelectorAll('.category-item')[1].querySelector('.count-badge');
+    if (favCount) favCount.innerText = favorites.size;
 }
 
 /* Comparisons */
@@ -327,15 +344,20 @@ function handleHash() {
 window.shareTool = function(cardId, btn) {
     const url = window.location.origin + window.location.pathname + '#' + cardId;
     navigator.clipboard.writeText(url);
-    const og = btn.innerHTML;
-    btn.innerHTML = '<span style="font-size:0.7rem; font-weight:bold; color:var(--primary);">Copied!</span>';
-    setTimeout(() => btn.innerHTML = og, 2000);
+    showToast("Link copied to clipboard! 📋");
 }
 
 window.copyText = function(text, btn) {
     navigator.clipboard.writeText(text);
-    btn.innerText = 'Copied!';
-    setTimeout(() => btn.innerText = 'Copy', 2000);
+    showToast("Command copied! 🚀");
+}
+
+window.showToast = function(msg) {
+    const toast = document.getElementById('toast');
+    toast.innerText = msg;
+    toast.classList.add('show');
+    if (window.toastTimeout) clearTimeout(window.toastTimeout);
+    window.toastTimeout = setTimeout(() => toast.classList.remove('show'), 2500);
 }
 
 function setupShortcuts() {
