@@ -85,6 +85,18 @@ Don't just pick one tool. **Pick your workflow.**
       -p 3000:3000 docker.all-hands.dev/all-hands-ai/openhands:0.8
     ```
 
+---
+
+## 🥊 Deep Dives & Architectural Comparisons
+If you are evaluating tools for an engineering team, don't rely on generic feature matrices. We have built deep technical head-to-head comparisons detailing workflow philosophies, actual SWE-bench data, and vendor lock-in risks for April 2026:
+
+1. **[The AI-Native IDE Battle: Cursor vs. Windsurf](comparisons/cursor-vs-windsurf.md)**
+2. **[Terminal Agents: Claude Code vs. OpenCode (vs. Aider)](comparisons/claude-code-vs-opencode.md)**
+3. **[App Builders: Lovable vs. Bolt.new vs. v0](comparisons/lovable-vs-bolt-vs-v0.md)**
+4. **[Autonomous SWEs: Devin vs. OpenHands](comparisons/devin-vs-openhands.md)**
+
+---
+
 ## Contents
 
 - [AI Coding Agents](#ai-coding-agents)
