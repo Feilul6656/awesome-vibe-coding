@@ -1,33 +1,89 @@
-# 🚀 Awesome Vibe Coding 
+# 🚀 The Vibe Coding Handbook
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-> **💡 WE HAVE A WEB APP:** Finding the right tools takes too long. Stop reading markdown and try the official interactive directory:  
-> **👉 [Explore the Interactive Web Directory Here](https://bluegalaxy111.github.io/awesome-vibe-coding/) 👈**
-> 
-> *It features real-time typo-tolerant search, CLI install snippets, Side-by-Side Tool Comparisons, and LocalStorage for saving your custom stack.* 
-
-The definitive directory for the next era of software development. Vibe coding simplifies development through AI agents, enabling builders to ship highly complex products rapidly.
+The definitive handbook for the next era of software development. Vibe coding simplifies development through AI agents, enabling builders to ship highly complex products rapidly.
 
 The term was [coined by Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) in February 2025:
 
 > *"There's a new kind of coding I call 'vibe coding', where you fully give in to the vibes, embrace exponentials, and forget that the code even exists."*
 
-**If you find this useful, please  star this repo - it helps others discover it!**
+**If you find this useful, please star this repo - it helps others discover it!**
 
-> **Note from the maintainer:** I built this list because I was drowning in AI coding tool launches and couldn't find a single place that had everything organized. Whether you're a senior dev evaluating agents or a complete beginner who just heard about "vibe coding" - this is the list I wish existed when I started. I personally test and verify tools before adding them. If something is missing or outdated, [open an issue](https://github.com/bluegalaxy111/awesome-vibe-coding/issues) or submit a PR.
+> **Note from the maintainer:** I built this handbook because I was drowning in AI coding tool launches and couldn't find a single place that had everything organized with honest, actionable advice. Whether you're a senior dev evaluating agents or a complete beginner who just heard about "vibe coding" - this is the resource I wish existed when I started. I personally test and verify tools before adding them. If something is missing or outdated, [open an issue](https://github.com/bluegalaxy111/awesome-vibe-coding/issues) or submit a PR.
+
+---
+
+## 🧭 What Should I Use? (The Complete 2026 Decision Guide)
+
+The AI coding landscape shifted radically in early 2026 (the "Agentic Engineering" era). It's no longer about fancy autocomplete; it's about composing stacks of autonomous software agents. 
+
+Don't just pick one tool. **Pick your workflow.**
+
+### 🟢 Level 1: "I Have Zero Coding Experience"
+*You want to describe an app in plain English and get a working product—without ever touching a terminal.*
+
+- 🎯 **For Full-Stack Web Apps:** 👉 Use **[Lovable](https://lovable.dev)**
+  - **Why it wins:** Lovable auto-generates your Next.js frontend, connects it to a real Supabase backend PostgreSQL database, and handles one-click deployments to platforms like Vercel.
+  - **The "Vibe" Setup:** Create an account, connect GitHub, type: "Build a habit tracker with user auth."
+  - **Limitations:** Struggles with complex, non-standard backend logic (e.g., custom webhooks or heavy cron jobs).
+  - **Cost Thresholds:** Free to start, but you hit message limits quickly. Pro is $20/mo.
+
+- 🎨 **For Landing Pages & UI Blocks:** 👉 Use **[v0](https://v0.dev)** or **[bolt.new](https://bolt.new)**
+  - **Why it wins:** v0 is unmatched for generating pixel-perfect React + Tailwind designs. Bolt.new goes further by running a full Node.js environment in your browser via WebContainers.
+  - **Quick Start:** Go to v0.dev. Prompt: "A dark-mode pricing table with glassmorphism."
 
 ---
 
-## ⚡ The Starter Kit
-Overwhelmed by 500+ tools? If you are just starting out with vibe coding, start here:
-1. **[Cursor](https://cursor.sh)** - The best overall AI code editor. *(Desktop IDE)*
-2. **[Lovable](https://lovable.dev)** - The best way to build a web app if you don't know how to code. *(Web Builder)*
-3. **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** - The best tool if you are already comfortable in the terminal. *(CLI)*
+### 🟡 Level 2: "I Want An AI-Native IDE"
+*You are a developer who wants visual feedback, a rich ecosystem, and AI deeply integrated into every keystroke.*
+
+- 👑 **The Industry Standard:** 👉 Use **[Cursor](https://cursor.sh)**
+  - **Why it wins:** Cursor's "Composer" feature orchestrates parallel AI agents to handle massive multi-file refactors. It sits on top of VS Code, so all your extensions work flawlessly. 
+  - **Setup:** Download app → Log in → (Optional) Add your own Anthropic API key to bypass Pro limits.
+  - **Pro Tip (Composability):** Start your app in Lovable, push it to GitHub, then clone and open it in Cursor for advanced architectural changes.
+  - **Cost Thresholds:** Free tier is very restrictive (slow requests). Pro ($20/mo) is essential for daily drivers.
+
+- ⚡ **The Context-Aware Alternative:** 👉 Use **[Windsurf](https://codeium.com/windsurf)**
+  - **Why it wins:** "Cascade" offers deeper, more persistent codebase awareness out of the box without needing extensive `.cursorrules` configurations. Features a generous free tier.
 
 ---
+
+### 🔴 Level 3: "I'm a Power User. Give me Terminal Agents."
+*You want maximum control, privacy, and the ability to pipe different AI models (like Claude, Gemini, or Local Models) into your workflow.*
+
+- 🧠 **For Maximum Reasoning Power:** 👉 Use **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)**
+  - **Why it wins:** Anthropic's terminal agent natively harnesses Claude's 1M+ token context window. Best-in-class for deeply complex debugging.
+  - **Performance Context:** As of April 2026, Claude Opus variants paired with agentic scaffolding dominate the SWE-bench Verified leaderboard (consistently hitting between 75% and 82%).
+  - **Quick Start:** `npm install -g @anthropic-ai/claude-code` → `claude`
+  - **Cost Thresholds:** Pay-per-token API pricing. **Warning:** Extensive context use can rack up a $10 bill in a few hours if you aren't careful.
+
+- 🔧 **For TUI Workflows & Open Source:** 👉 Use **[OpenCode](https://opencode.ai)** or **[Aider](https://aider.chat)**
+  - **Why OpenCode:** Exploded in popularity in 2026. A powerful Terminal UI (TUI) that supports 75+ LLMs natively (use whatever API key you want). 
+  - **Why Aider:** The veteran open-source tool with the most battle-tested, git-aware, multi-file editing capabilities. 
+  - **Quick Start (Aider):** `pip install aider-chat` → `aider --model claude-3-5-sonnet`
+
+---
+
+### 🟣 Level 4: "I Want an Autonomous AI Software Engineer"
+*You want to assign a Jira ticket to an AI and go get coffee. Benchmark: Handling end-to-end multi-file implementations autonomously.*
+
+- 🤖 **For Enterprise-Grade Autonomy:** 👉 Use **[Devin](https://devin.ai)**
+  - **Why it wins:** The first fully sandboxed autonomous SWE. Incredible capabilities for handling full DevOps pipelines and deployments independently.
+  - **Cost:** Enterprise pricing.
+
+- 🔓 **The Open Source Champion:** 👉 Use **[OpenHands](https://github.com/All-Hands-AI/OpenHands)**
+  - **Why it wins:** The premier free, self-hosted alternative to Devin. Run it locally via Docker, hook it up to Claude's API, and let it resolve your GitHub PRs autonomously. 
+  - **Performance Benchmark:** OpenHands + Claude scores incredibly high because the sophisticated agentic scaffolding allows the LLM to run bash commands and test its own code before submitting.
+  - **Quick Start (Docker required):** 
+    ```bash
+    docker run -it --pull=always \
+      -e WORKSPACE_BASE=$(pwd)/workspace \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -p 3000:3000 docker.all-hands.dev/all-hands-ai/openhands:0.8
+    ```
 
 ## Contents
 
